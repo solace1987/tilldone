@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+
+   <title>TillDone</title>
+   <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<html>
+    <body>
+            <div id='logo'><h1 >TillDone</h1></div>
+        <div class='container'>
+            <div activity-display class='child-div'>
+                <div class='heading'> <h2>Search</h2></div>
+                <div id='content'>
+                <label>Search factor
+                    <select class="search-factor" name="search-factor">
+                      <option value="">Select One …</option>
+                      <option value="pending">Pending Task</option>
+                      <option value="completed">Completed Task</option>
+                      <option value="period">Period (Day)</option>
+                    </select>
+                  </label>
+                  <br/>
+
+                  <div id='period'>
+                  <input  class='date-cc' type='text' value='' placeholder='Day (M-DD-YYYY)' >
+                        <button>Run Search</button>
+                    </div>
+
+                    <ul class='activDisplay'></ul>
+                </div>
+            
+            </div>
+
+            <div today-display class='child-div'>
+                   <div class='heading'> <h2 class='head'>Today's Activity</h2></div>
+                   <div id='today-content'>
+                    <input task type="text" value="" placeholder="what i want to do...">
+                    <textarea  desc  value="" placeholder="Remark"></textarea><br/> 
+                    <button>Pin it</button>
+                    <ul class='todayDisplay'></ul>
+                   </div>
+            </div>
+
+           
+        </div> 
+        <script src="/TILLDONE/js/TweenMax.min.js"></script> 
+        <script src="/TILLDONE/js/root.js"></script>             
+    </body>
+</html>
